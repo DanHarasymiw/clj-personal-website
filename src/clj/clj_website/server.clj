@@ -1,5 +1,5 @@
-(ns multipage.server
-  (:require [multipage.handler :refer [app]]
+(ns clj-website.server
+  (:require [clj-website.handler :refer [app]]
             [environ.core :refer [env]]
             [ring.adapter.jetty :refer [run-jetty]])
   (:gen-class))

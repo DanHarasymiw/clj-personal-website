@@ -1,4 +1,4 @@
-(ns multipage.handler
+(ns clj-website.handler
   (:require [compojure.core :refer [GET defroutes]]
             [compojure.route :refer [not-found resources]]
             [ring.middleware.defaults :refer [site-defaults wrap-defaults]]
@@ -6,7 +6,6 @@
             [hiccup.page :refer [include-js include-css]]
             [prone.middleware :refer [wrap-exceptions]]
             [environ.core :refer [env]]))
-
 (def home-page
   (html
    [:html

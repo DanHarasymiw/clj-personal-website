@@ -1,5 +1,5 @@
-(ns ^:figwheel-no-load multipage.dev
-  (:require [multipage.core :as core]
+(ns ^:figwheel-no-load clj-website.dev
+  (:require [clj-website.core :as core]
             [figwheel.client :as figwheel :include-macros true]
             [weasel.repl :as weasel]
             [reagent.core :as r]))

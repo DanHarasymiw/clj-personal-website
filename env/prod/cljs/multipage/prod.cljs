@@ -1,5 +1,5 @@
-(ns multipage.prod
-  (:require [multipage.core :as core]))
+(ns clj-website.prod
+  (:require [clj-website.core :as core]))
 
 ;;ignore println statements in prod
 (set! *print-fn* (fn [& _]))

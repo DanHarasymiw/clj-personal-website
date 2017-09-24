@@ -1,11 +1,11 @@
-(ns multipage.core
+(ns clj-website.core
     (:require [reagent.core :as reagent :refer [atom]]
               [reagent.session :as session]
               [secretary.core :as secretary :include-macros true]
               [goog.events :as events]
               [goog.history.EventType :as EventType]
-              [multipage.home :refer [home-page]]
-              [multipage.projects :refer [projects-page]])
+              [clj-website.home :refer [home-page]]
+              [clj-website.projects :refer [projects-page]])
     (:import goog.History))
 
 ;; -------------------------

@@ -1,6 +1,6 @@
-(ns multipage.repl
-  (:use multipage.handler
-        multipage.dev
+(ns clj-website.repl
+  (:use clj-website.handler
+        clj-website.dev
         ring.server.standalone
         [ring.middleware file-info file]))
 

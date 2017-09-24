@@ -1,5 +1,5 @@
-(ns multipage.home
-  (:require [multipage.common :refer [nav-bar jumbotron content]]))
+(ns clj-website.home
+  (:require [clj-website.common :refer [nav-bar jumbotron content]]))
 
 
 

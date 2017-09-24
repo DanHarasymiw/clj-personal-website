@@ -1,4 +1,4 @@
-(defproject multipage "0.1.0-SNAPSHOT"
+(defproject clj-website "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -25,14 +25,14 @@
             [lein-environ "1.0.0"]
             [lein-asset-minifier "0.2.2"]]
 
-  :ring {:handler multipage.handler/app
-         :uberwar-name "multipage.war"}
+  :ring {:handler clj-website.handler/app
+         :uberwar-name "clj-website.war"}
 
   :min-lein-version "2.5.0"
 
-  :uberjar-name "multipage.jar"
+  :uberjar-name "clj-website.jar"
 
-  :main multipage.server
+  :main clj-website.server
 
   :clean-targets ^{:protect false} [[:cljsbuild :builds :app :compiler :output-dir]
                                     [:cljsbuild :builds :app :compiler :output-to]]
@@ -48,7 +48,7 @@
                                         :optimizations :none
                                         :pretty-print  true}}}}
 
-  :profiles {:dev {:repl-options {:init-ns multipage.repl
+  :profiles {:dev {:repl-options {:init-ns clj-website.repl
                                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
                    :dependencies [[ring-mock "0.1.5"]
@@ -70,12 +70,12 @@
                    :figwheel {:http-server-root "public"
                               :server-port 3449
                               :css-dirs ["resources/public/css"]
-                              :ring-handler multipage.handler/app}
+                              :ring-handler clj-website.handler/app}
 
                    :env {:dev true}
 
                    :cljsbuild {:builds {:app {:source-paths ["env/dev/cljs"]
-                                              :compiler {:main "multipage.dev"
+                                              :compiler {:main "clj-website.dev"
                                                          :source-map true}}
 }
 }}

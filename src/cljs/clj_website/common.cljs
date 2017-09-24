@@ -1,4 +1,4 @@
-(ns multipage.common
+(ns clj-website.common
   (:require [clojure.string :as string]))
 
 (defonce pages ["Home" "Projects"])
