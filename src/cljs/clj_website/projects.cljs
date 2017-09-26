@@ -8,13 +8,14 @@
    [:div {:class "row project-content"}
     [:div {:class "col-xs-8"}
      [:div {:class "project-title"}
-      [:h3 [:a {:href github-url} name]]]]]
+      [:h3 name]]]]
    [:div {:class "row project-content"}
-     [:div {:class "text-background col-xs-10"}
-      description]
+     [:div {:class "col-xs-10"}
+      [:div {:class "text-background"} description]]
      [:div {:class "col-xs-2 project-pic"}
       [:img {:src pic-url
-            :class "img-rounded"}]]]])
+            :class "img-rounded"}]
+      [:div {:class "github-link"} [:a {:href github-url} "View on Github " [:img {:src "images/github.png" :class "github-pic"}]]]]]])
 
 (defn projects-page []
   [:div
