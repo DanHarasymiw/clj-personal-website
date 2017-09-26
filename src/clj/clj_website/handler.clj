@@ -14,7 +14,8 @@
      [:meta {:name "viewport"
              :content "width=device-width, initial-scale=1"}]
      (include-css (if (env :dev) "css/site.css" "css/site.min.css")
-                  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")]
+                  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                  "https://fonts.googleapis.com/css?family=Rubik")]
     [:body
      [:div#app]
      (include-js "js/app.js"

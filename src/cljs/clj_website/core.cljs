@@ -5,7 +5,8 @@
               [goog.events :as events]
               [goog.history.EventType :as EventType]
               [clj-website.home :refer [home-page]]
-              [clj-website.projects :refer [projects-page]])
+              [clj-website.projects :refer [projects-page]]
+              [clj-website.contact :refer [contact-page]])
     (:import goog.History))
 
 ;; -------------------------
@@ -23,6 +24,7 @@
 
 (secretary/defroute "/projects" []
   (session/put! :current-page #'projects-page))
+
 
 
 ;; -------------------------
