@@ -20,10 +20,10 @@
 (secretary/set-config! :prefix "#")
 
 (secretary/defroute "/" []
-  (session/put! :current-page #'home-page))
+                    (session/put! :current-page #'home-page))
 
 (secretary/defroute "/projects" []
-  (session/put! :current-page #'projects-page))
+                    (session/put! :current-page #'projects-page))
 
 
 

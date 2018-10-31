@@ -1,7 +1,7 @@
 (ns clj-website.common
   (:require [clojure.string :as string]))
 
-(defonce pages ["Home" "Projects"])
+(defonce pages ["Home" "Projects" "Games"])
 
 (defn nav-bar [current-page]
   [:nav {:class "navbar navbar-default"}
@@ -14,6 +14,9 @@
        [:li {:class (if (= current-page page) "active")}
         (let [stripped-name (string/lower-case (string/replace page " " ""))]
           [:a {:href (if (= page "Home") "/#/" (str "/#/" stripped-name))} page])])]]])
+
+(defn footer []
+  [])
 
 (defn jumbotron
   "Big name at the top?"

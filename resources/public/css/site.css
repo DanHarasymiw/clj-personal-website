@@ -2,6 +2,14 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
+@media screen and (max-width: 480px) {
+    .jumbotron {
+        max-height: 8%;
+    }
+}
+
+
 p {
     font-size: 18px;
 }
@@ -35,6 +43,13 @@ h1 {
      max-size: 20%;
      height:20%;
 }
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
 
 @-webkit-keyframes scroll{
   100%{
@@ -118,11 +133,18 @@ h1 {
   border-radius: 40px;
 }
 
+.github-link {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .github-link a, .github-link a:hover {
     font-size: 18px;
     color: white;
+    display: inline-block
 }
 
 .github-pic {
  height: 30px;
+ dispaly: inline-block;
 }
